@@ -20,8 +20,8 @@ module.exports = lando => {
       const app = lando.getApp(options._app.root);
       // Destroy the app
       if (app) {
-        console.log((chalk.green(`Preparing to resign ${app.name} to the dustbin of history...`)));
-        return app.destroy().then(() => console.log(chalk.red('Your app has paid the IRON PRICE. App destroyed!')));
+        console.log((chalk.green(`Preparing to destroy ${app.name}...`)));
+        return app.destroy().then(() => console.log(chalk.red('App destroyed!')));
       }
     },
   };

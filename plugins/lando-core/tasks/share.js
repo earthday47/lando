@@ -69,7 +69,7 @@ module.exports = lando => {
       const app = lando.getApp(options._app.root);
       // Get the sharing url
       if (app) {
-        console.log(chalk.green('About to share your app to a whole new world!'));
+        console.log(chalk.green('Preparing to share your app publicly...'));
         // Ensure the app is up and lets share
         return app.init().then(app => lando.metrics.report('share', {}))
         // Get the URLS

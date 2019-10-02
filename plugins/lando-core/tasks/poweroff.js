@@ -9,7 +9,7 @@ module.exports = lando => {
     level: 'engine',
     describe: 'Spins down all lando related containers',
     run: () => {
-      console.log(chalk.green('NO!! SHUT IT ALL DOWN! Spinning Lando containers down...'));
+      console.log(chalk.green('Spinning Lando containers down...'));
       // Get all our containers
       return lando.engine.list()
       // SHUT IT ALL DOWN

@@ -39,7 +39,7 @@ module.exports = lando => {
       const app = lando.getApp(options._app.root);
       // Rebuild the app
       if (app) {
-        console.log(chalk.green('Rising anew like a fire phoenix from the ashes! Rebuilding app...'));
+        console.log(chalk.green('Rebuilding app...'));
         app.opts = handleOpts(options);
         return utils.appToggle(app, 'rebuild', table, lando.cli.makeArt());
       }

@@ -10,7 +10,7 @@ module.exports = lando => ({
     const app = lando.getApp(options._app.root);
     // Stop it if we can!
     if (app) {
-      console.log(chalk.green('This party\'s over :( Stopping app'));
+      console.log(chalk.green('Stopping app...'));
       return app.stop().then(() => console.log(chalk.red('App stopped!')));
     }
   },

@@ -13,7 +13,7 @@ module.exports = lando => {
       const app = lando.getApp(options._app.root);
       // Start it if we can!
       if (app) {
-        console.log(chalk.green('Let\'s get this party started! Starting app..'));
+        console.log(chalk.green('Starting app...'));
         return utils.appToggle(app, 'start', table, lando.cli.makeArt());
       }
     },
